@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2446"/>
+      <stop offset="0.55" stop-color="#0d1226"/>
+      <stop offset="1" stop-color="#070911"/>
+    </linearGradient>
+    <linearGradient id="tube" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f2c46d"/>
+      <stop offset="0.5" stop-color="#ffe3a3"/>
+      <stop offset="1" stop-color="#c98f3c"/>
+    </linearGradient>
+    <radialGradient id="lens" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#8fd6ff"/>
+      <stop offset="0.45" stop-color="#2a6fd1"/>
+      <stop offset="1" stop-color="#0b1d4a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6ab8ff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#6ab8ff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="sq"><rect x="0" y="0" width="1024" height="1024" rx="228"/></clipPath>
+  </defs>
+  <g clip-path="url(#sq)">
+    <rect width="1024" height="1024" fill="url(#bg)"/>
+    <!-- faint star field -->
+    <g fill="#e8eeff" opacity="0.7">
+      <circle cx="170" cy="190" r="5"/><circle cx="860" cy="150" r="4"/>
+      <circle cx="800" cy="860" r="5"/><circle cx="210" cy="820" r="3.5"/>
+      <circle cx="905" cy="520" r="3"/><circle cx="130" cy="500" r="3"/>
+    </g>
+    <!-- telescope tube, angled up and to the right -->
+    <g transform="translate(512 560) rotate(-38)">
+      <rect x="-300" y="-96" width="520" height="192" rx="40" fill="url(#tube)"/>
+      <rect x="-300" y="-96" width="520" height="34" rx="17" fill="#fff6dc" opacity="0.35"/>
+      <!-- eyepiece -->
+      <rect x="-388" y="-64" width="108" height="128" rx="26" fill="#b57a2c"/>
+      <rect x="-388" y="-64" width="108" height="26" rx="13" fill="#ffd98a" opacity="0.5"/>
+      <!-- focuser rings -->
+      <rect x="-40" y="-118" width="46" height="236" rx="14" fill="#8a5a1f"/>
+      <rect x="62" y="-112" width="30" height="224" rx="12" fill="#8a5a1f"/>
+      <!-- objective lens housing and lens -->
+      <rect x="208" y="-118" width="44" height="236" rx="16" fill="#8a5a1f"/>
+      <ellipse cx="236" cy="0" rx="36" ry="108" fill="url(#lens)"/>
+      <ellipse cx="226" cy="-34" rx="12" ry="36" fill="#ffffff" opacity="0.35"/>
+      <!-- tripod legs -->
+      <path d="M 60 110 L -10 360 M 60 110 L 150 360 M 60 110 L 60 380" stroke="#e7b766" stroke-width="26" stroke-linecap="round" fill="none"/>
+    </g>
+    <!-- light cone from the lens -->
+    <g transform="translate(512 560) rotate(-38)">
+      <circle cx="236" cy="0" r="210" fill="url(#glow)"/>
+    </g>
+    <!-- a few stars seen through the lens -->
+    <g fill="#ffffff">
+      <path d="M 735 300 l 9 -26 l 9 26 l 26 9 l -26 9 l -9 26 l -9 -26 l -26 -9 z" opacity="0.95"/>
+      <circle cx="790" cy="228" r="6" opacity="0.9"/>
+      <circle cx="668" cy="232" r="4" opacity="0.8"/>
+    </g>
+  </g>
+</svg>

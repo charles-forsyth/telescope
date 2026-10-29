@@ -1,0 +1,30 @@
+# build output
+node_modules/
+dist/
+target/
+src-tauri/target/
+*.log
+.DS_Store
+# secrets / tokens (never commit)
+*.token
+*.tokens.json
+.env
+.env.*
+secrets/
+# local QA captures are kept out of git except the curated set
+qa/*.tmp.png
+dist-web/
+
+# keep the icon source
+!icons-src/
+
+# generated: demo build (fixture data) and web bundle; never commit
+dist-demo/
+dist-web/
+logs/
+qa/diag-*
+qa/*.app
+qa/dmg.*
+
+# local QA browser profiles (Chrome user-data dirs)
+.qa-profile*/

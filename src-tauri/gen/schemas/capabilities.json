@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"Main window capabilities. No opener permission: the webview cannot open URLs; only Rust opens the browser, from the gated sign_in command.","local":true,"windows":["main"],"permissions":["core:default","core:window:allow-start-dragging","core:window:allow-set-theme"]}}

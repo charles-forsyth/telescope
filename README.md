@@ -1,5 +1,7 @@
 # Telescope
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23755871.svg)](https://doi.org/10.5281/zenodo.23755871)
+
 [![CI](https://github.com/charles-forsyth/telescope/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/charles-forsyth/telescope/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
